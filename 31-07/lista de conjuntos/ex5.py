@@ -21,3 +21,6 @@ if num in A:
     print("c) ", num, "pertence a A")
 else:
     print("c) ", num, "não pertence a A")
+    
+    
+    

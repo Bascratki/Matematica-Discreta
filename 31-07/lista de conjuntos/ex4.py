@@ -2,3 +2,7 @@ lista = ["bananas", "peras", "laranjas", "limões", "bananas", "bananas", "abaca
 B = set(lista)
 B = len(B)
 print("A cardinalidade do conjunto B = ",B)
+
+
+
+

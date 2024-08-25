@@ -5,3 +5,6 @@ if A == B:
     print("A é igual a B")
 else:
     print("A não é igual a B")
+    
+    
+    
