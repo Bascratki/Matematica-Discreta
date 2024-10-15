@@ -1,0 +1,44 @@
+for i in range(2**len(listaconjunto)):
+    subconjunto = []
+    for k in range(len(listaconjunto)):
+      print(f"i: {bin(i)} & {bin(1<<k)} = {bin(i & 1<<k)}")
+      if i & 1<<k:
+        subconjunto.append(listaconjunto[k])
+    subconjuntos.append(subconjunto)
+  return subconjuntos
+
+
+i = 0 k = 0 : 000 ^ 001 = 000
+i = 0 k = 1 : 000 ^ 010 = 000
+i = 0 k = 2 : 000 ^ 100 = 000
+
+subconjunto = {}
+
+i = 1 k = 0 : 001 ^ 001 = 000 subconjunto = {1}
+i = 1 k = 1 : 001 ^ 010 = 000 
+i = 1 k = 2 : 001 ^ 100 = 000
+
+
+i = 2 k = 0 : 010 ^ 001 = 000
+i = 2 k = 1 : 010 ^ 010 = 010 subconjunto = {2}
+i = 2 k = 2 : 010 ^ 100 = 000
+
+i = 3 k = 0 : 011 ^ 001 = 001 subconjunto = {1}
+i = 3 k = 1 : 011 ^ 010 = 010 subconjunto = {1,2}
+i = 3 k = 2 : 011 ^ 100 = 000 
+
+i = 4 k = 0 : 100 ^ 001 = 000
+i = 4 k = 1 : 100 ^ 010 = 000
+i = 4 k = 2 : 100 ^ 100 = 100 subconjunto = {3}
+
+i = 5 k = 0 : 101 ^ 001 = 001 subconjunto = {1}
+i = 5 k = 1 : 101 ^ 010 = 000
+i = 5 k = 2 : 101 ^ 100 = 100 subconjunto = {1,3}
+
+i = 6 k = 0 : 110 ^ 001 = 000
+i = 6 k = 1 : 110 ^ 010 = 010 subconjunto = {2}
+i = 6 k = 2 : 110 ^ 100 = 100 subonjunto = {2,3}
+
+i = 7 k = 0 : 111 ^ 001 = 001 subconjunto = {1}
+i = 7 k = 1 : 111 ^ 010 = 010 subconjunto = {1,2}
+i = 7 k = 2 : 111 ^ 100 = 100 subconjunto = {1,2,3}
